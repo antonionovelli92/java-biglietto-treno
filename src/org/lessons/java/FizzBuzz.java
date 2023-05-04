@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class FizzBuzz {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
 
         System.out.print("Inserisci un numero casuale: ");
-        int numbUser = sc.nextInt();
+        int numbUser = scan.nextInt();
 
         for (int i = 1; i <= numbUser; i++) {
             if (i % 3 == 0 && i % 5 == 0) {
@@ -20,5 +20,6 @@ public class FizzBuzz {
                 System.out.println(i);
             }
         }
+        scan.close();
     }
 }
