@@ -39,3 +39,4 @@ public class CalcolaBiglietto {
         scanner.close();
     }
 }
+
