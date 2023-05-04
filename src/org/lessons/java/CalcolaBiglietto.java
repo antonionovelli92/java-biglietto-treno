@@ -17,17 +17,20 @@ public class CalcolaBiglietto {
        
         double prezzo = km * 0.21;
 
-        // 20% per i minorenni
+        // 20% under 18
+        
         if (eta < 18) {
         	prezzo = prezzo - (prezzo * 20 / 100);
         }
 
-        // 40% per gli over 65
+        // 40% over 65
+        
         if (eta >= 65) {
         	prezzo = prezzo - (prezzo * 40 / 100);
         }
 
-//        Arrotorndo leggermente il prezzo
+        //  Arrotorndo leggermente il prezzo
+        
         String prezzoFormat = String.format("%.2f", prezzo);
        
         System.out.println("Il prezzo del biglietto è: " + prezzoFormat + " euro");
