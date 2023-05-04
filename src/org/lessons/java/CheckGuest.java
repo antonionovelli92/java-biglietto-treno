@@ -27,7 +27,7 @@ public class CheckGuest {
         boolean presente = false;
 //        faccio partire il tutto da 0 (perchè è un arrey di nomi)
         int i = 0;
-//        Verifico se il nome è presente
+//        Verifico se il nome è presente, (controllato su intenet il metodo, in modo da converire automaticamente la stringa)
         while (!presente && i < invitati.length) {
             if (invitati[i].equalsIgnoreCase(nome)) {
                 presente = true;
@@ -36,9 +36,9 @@ public class CheckGuest {
         }
 
         if (presente) {
-            System.out.println("Benvenuto alla festa!");
+            System.out.println("Benvenuto al Party!");
         } else {
-            System.out.println("Mi dispiace, non sei sulla lista degli invitati.");
+            System.out.println("Mi dispiace! Vattene.");
         }
         scanner.close();
     }
