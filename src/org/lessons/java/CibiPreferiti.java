@@ -14,7 +14,7 @@ public class CibiPreferiti {
 	        // last
 	        System.out.println("Il mio cibo preferito ma non troppo è: " + classificaCibi[classificaCibi.length - 1]);
 
-	        // middle (check if 'odd')
+	        // middle (check if 'odd') 
 	        if (classificaCibi.length % 2 != 0) {
 	            int middle = classificaCibi.length / 2;
 	            System.out.println("Il cibo di mezza classifica è: " + classificaCibi[middle]);
